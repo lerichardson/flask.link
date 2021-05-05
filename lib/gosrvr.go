@@ -1,0 +1,5 @@
+package gosrvr
+
+import (
+	"package"
+)
