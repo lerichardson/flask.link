@@ -1,5 +1,0 @@
-package gosrvr
-
-import (
-	"package"
-)
