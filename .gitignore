@@ -123,6 +123,6 @@ dist/
 # Temporary folders
 tmp/
 temp/
-# Since this is a TypeScript project, any file that has .js as the file ending
+# Since this is a TypeScript project, I'll remove any file with .js ending
 
 *.js
