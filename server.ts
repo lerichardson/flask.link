@@ -8,7 +8,7 @@ const redir = require("./src/redir")
 const app = express();
 const router = express.Router();
 const fileDir = `public`
-const SECRET = 0x0000000000000000000000000000000000000000;
+const SECRET = process.env.HCAPTCHA_SECRET_KEY;
 app.use(express.static(fileDir, {
     extensions: ['html', 'htm'],
 }));
