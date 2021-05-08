@@ -9,6 +9,7 @@ const app = express();
 const router = express.Router();
 const fileDir = `public`
 const SECRET = process.env.HCAPTCHA_SECRET_KEY;
+// remove `.html` from URLs
 app.use(express.static(fileDir, {
     extensions: ['html', 'htm'],
 }));
@@ -27,5 +28,8 @@ app.listen(3000, () => {
     console.log(req.body.test3)
     res.redirect(`/home`)
   })
+  app.get('/', function(req, res) {
+    res.redirect('/home');
+  });
 // some server settings
 
